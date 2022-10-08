@@ -5,75 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/index.css" />
+    <script src="js/index.js" defer></script>
     <title>ГАУ «Тувинская государственная филармония им. В.М. Халилова»</title>
   </head>
   <body>
-    <div class="container">
+    <div class="loader"></div>
+    <div class="container hiden">
       <header class="navigation">
-        <div class="navigation-top">
-          <div class="navigation-logo">
-            <img src="" alt="logo" />
-            <p>ГАУ «Тувинская государственная филармония им. В.М. Халилова»</p>
+        <div class="navigation__top">
+          <div class="navigation__logo">
+            <img src="/assets/img/svg/logo.svg" alt="logo" />
+            <p>
+              ГАУ «Тувинская государственная <br />
+              филармония им. В.М. Халилова»
+            </p>
           </div>
-          <div>
-            <div class="navigation-info">
-              <p>667000, г. Кызыл, ул. Щетинкина-Кравченко, д. 58</p>
+          <div class="navigation__info">
+            <div>
+              <img src="/assets/img/svg/akar-icons_location.svg" alt="location" />
+              <p>
+                667000, г. Кызыл,<br />
+                ул. Щетинкина-Кравченко, д. 58
+              </p>
+            </div>
+            <div>
+              <img src="/assets/img/svg/ant-design_phone-outlined.svg" alt="location" />
               <p>+7 (39422) 2-15-20</p>
             </div>
           </div>
-          <div class="navigation-search">
-            <input type="button" value="Поиск" />
+          <div class="navigation__search">
+            <input type="text" value="Поиск" />
+            <input type="button" value="" />
           </div>
         </div>
-        <nav class="navigation-links">
+        <nav class="navigation__links">
           <ul>
             <li>
               <a href="#">
-                <img src="#" alt="nav" />
+                <img src="/assets/img/svg/curtains-vector.svg" alt="curtains" />
                 <p>Афиша</p>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="#" alt="nav" />
+                <img src="/assets/img/svg/news-vector.svg" alt="news" />
                 <p>Новости</p>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="#" alt="nav" />
+                <img src="/assets/img/svg/stage-vector.svg" alt="stage" />
                 <p>Фестивали</p>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="#" alt="nav" />
+                <img src="/assets/img/svg/project-vector.svg" alt="curtains" />
                 <p>Проеты</p>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="#" alt="nav" />
+                <img src="/assets/img/svg/media-vector.svg" alt="curtains" />
                 <p>Медиа</p>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="#" alt="nav" />
+                <img src="/assets/img/svg/contacts-vector.svg" alt="curtains" />
                 <p>Контакты</p>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="#" alt="nav" />
+                <img src="/assets/img/svg/harp-vector.svg" alt="curtains" />
                 <p>О нас</p>
               </a>
             </li>
           </ul>
         </nav>
       </header>
-      <main></main>
-      <footer></footer>
+      <main>
+        <h1 class="title">Афиша</h1>
+      </main>
+      <footer class="footer">
+        <div class="footer__contacts">
+          <h3><a href="#">Контакты</a></h3>
+          <div class="footer__adress">
+            <img src="/assets/img/svg/ant-design_phone-outlined.svg" alt="location" />
+            <a href="tel:+73942221520">+7 (39422) 2-15-20</a>
+          </div>
+          <div class="footer__adress">
+            <img src="/assets/img/svg/ant-design_mail-outlined.svg" alt="location" />
+            <a href="mailto:filarmonia-tuva@mail.ru">filarmonia-tuva@mail.ru</a>
+          </div>
+          <div class="footer__adress">
+            <img src="/assets/img/svg/akar-icons_location.svg" alt="location" />
+            <a
+              href="https://www.google.com/maps/place/%D0%A2%D1%83%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F+%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%84%D0%B8%D0%BB%D0%B0%D1%80%D0%BC%D0%BE%D0%BD%D0%B8%D1%8F+%D0%B8%D0%BC.+%D0%92.%D0%9C.+%D0%A5%D0%B0%D0%BB%D0%B8%D0%BB%D0%BE%D0%B2%D0%B0/@51.7220471,94.434078,15z/data=!4m5!3m4!1s0x0:0x764f02eb9e59887e!8m2!3d51.7219724!4d94.4340914"
+              target="_blank"
+              >667000, г. Кызыл,<br />
+              ул. Щетинкина-Кравченко, д. 58</a
+            >
+          </div>
+        </div>
+        <div class="footer__nav">
+          <h3>Навигация</h3>
+          <div class="footer__nav-wrp">
+            <div>
+              <nav class="footer__nav-links">
+                <ul>
+                  <li>
+                    <a href="#">Афиша</a>
+                  </li>
+                  <li>
+                    <a href="#">Новости</a>
+                  </li>
+                  <li>
+                    <a href="#">Фестивали</a>
+                  </li>
+                  <li>
+                    <a href="#">Купить билет</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div>
+              <nav class="footer__nav-links">
+                <ul>
+                  <li>
+                    <a href="#">Проеты</a>
+                  </li>
+                  <li>
+                    <a href="#">Медиа</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакты</a>
+                  </li>
+                  <li>
+                    <a href="#">О нас</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="footer__social">
+          <h3>Социальные сети</h3>
+          <div class="footer__social-wrp">
+            <div class="footer__adress">
+              <img src="/assets/img/svg/akar-icons_location.svg" alt="location" />
+              <a href="https://instagram.com/tuvaphilharmonia17?utm_medium=copy_link." target="_blank">Instagram</a>
+            </div>
+            <div class="footer__adress">
+              <img src="/assets/img/svg/akar-icons_location.svg" alt="location" />
+              <a href="https://vk.com/" target="_blank">Вконтакте</a>
+            </div>
+            <div class="footer__adress">
+              <img src="/assets/img/svg/akar-icons_location.svg" alt="location" />
+              <a href="https://youtube.com/" target="_blank">YouTube</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

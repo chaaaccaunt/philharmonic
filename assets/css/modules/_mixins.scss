@@ -1,0 +1,10 @@
+@mixin flexcolumncenter() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin RalewayFonts() {
+  font-family: "Raleway", Helvetica, sans-serif;
+}

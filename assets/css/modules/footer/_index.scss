@@ -1,0 +1,72 @@
+@use "../mixins";
+
+.footer {
+  padding: 1rem 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--main-color);
+  box-sizing: border-box;
+  color: #fff;
+
+  & h3 {
+    align-self: center;
+    & a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  &__contacts {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__nav {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    &-wrp {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-links {
+      & ul {
+        display: flex;
+        flex-direction: column;
+        padding-inline-start: 0;
+        margin-block-start: 0;
+        & li {
+          width: 9rem;
+          height: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          list-style-type: none;
+          & a {
+            width: 5rem;
+            color: #fff;
+            font-family: "RalewayMedium";
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  &__social {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__adress {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    height: 3rem;
+    & a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
